@@ -31,23 +31,19 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
     }
     
    
+    
+
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
 let vc = storyboard?.instantiateViewController(withIdentifier: "DetailViewController") as? DetailViewController
         vc?.getEmployeeName = employeeName_Array[indexPath.row]
         vc?.getEmployeeName1 = employeeId_Array[indexPath.row]
         vc?.getEmployeeName2 = employeeAge_Array[indexPath.row]
         vc?.getEmployeeName3 = employeeSalary_Array[indexPath.row]
-        
+
         self.navigationController?.pushViewController(vc!, animated: true)
-        
-      
+
+
     }
-    
-    
-    
-    
-    
-    
 
     
     var employeeName_Array = [String]()
@@ -71,9 +67,9 @@ let vc = storyboard?.instantiateViewController(withIdentifier: "DetailViewContro
     }
     func fetchUserDtat() {
         
-        
+        //https://api.opendota.com/api/heroStats
 
-        let myUrl = "https://api.opendota.com/api/heroStats"
+        let myUrl = "http://dummy.restapiexample.com/api/v1/employees"
         Alamofire.request(myUrl, method: .get).responseJSON { (myResponse) in
             switch myResponse.result {
             case .success:
@@ -82,7 +78,7 @@ let vc = storyboard?.instantiateViewController(withIdentifier: "DetailViewContro
                 print(result)
                 // print(result![data])
                 
-                let resultararay = result!
+                let resultararay = result!["data"]
                 self.employeeName_Array.removeAll()
                 self.employeeId_Array.removeAll()
                 for i in resultararay.arrayValue{
