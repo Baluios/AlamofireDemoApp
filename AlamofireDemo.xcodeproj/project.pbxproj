@@ -24,6 +24,7 @@
 		9BAFE229276646E2007E79A6 /* UserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BAFE227276646E2007E79A6 /* UserTableViewCell.swift */; };
 		9BAFE22A276646E2007E79A6 /* UserTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9BAFE228276646E2007E79A6 /* UserTableViewCell.xib */; };
 		9BAFE22E2766615D007E79A6 /* HeroStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BAFE22D2766615D007E79A6 /* HeroStatus.swift */; };
+		9BC0558927679373002D3E49 /* ReceiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC0558827679373002D3E49 /* ReceiveViewController.swift */; };
 		B5E03B7B572C152753E6A20E /* Pods_AlamofireDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15754C0394059EB2AA89B6A9 /* Pods_AlamofireDemo.framework */; };
 /* End PBXBuildFile section */
 
@@ -74,6 +75,7 @@
 		9BAFE227276646E2007E79A6 /* UserTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTableViewCell.swift; sourceTree = "<group>"; };
 		9BAFE228276646E2007E79A6 /* UserTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserTableViewCell.xib; sourceTree = "<group>"; };
 		9BAFE22D2766615D007E79A6 /* HeroStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroStatus.swift; sourceTree = "<group>"; };
+		9BC0558827679373002D3E49 /* ReceiveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiveViewController.swift; sourceTree = "<group>"; };
 		CB14EE8159B744C1660F52CC /* Pods-AlamofireDemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlamofireDemoUITests.debug.xcconfig"; path = "Target Support Files/Pods-AlamofireDemoUITests/Pods-AlamofireDemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -148,6 +150,7 @@
 				9BAFE2242766468C007E79A6 /* UserViewController.xib */,
 				9BAFE1B727663F50007E79A6 /* ViewController.swift */,
 				9B41A0F62767102800601BE2 /* DetailViewController.swift */,
+				9BC0558827679373002D3E49 /* ReceiveViewController.swift */,
 				9B41A0F42767084E00601BE2 /* DataTableViewCell.swift */,
 				9BAFE1B927663F50007E79A6 /* Main.storyboard */,
 				9BAFE1BF27663F51007E79A6 /* Assets.xcassets */,
@@ -404,6 +407,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9BAFE1BE27663F50007E79A6 /* AlamofireDemo.xcdatamodeld in Sources */,
+				9BC0558927679373002D3E49 /* ReceiveViewController.swift in Sources */,
 				9BAFE2252766468C007E79A6 /* UserViewController.swift in Sources */,
 				9BAFE1B827663F50007E79A6 /* ViewController.swift in Sources */,
 				9BAFE1B627663F50007E79A6 /* AppDelegate.swift in Sources */,
