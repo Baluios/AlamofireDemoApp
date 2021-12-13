@@ -15,6 +15,7 @@ class ReceiveViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.view.backgroundColor = UIColor.cyan
         
         self.dataReceive_Lbl.text = getEmployeeNameReceive
 
