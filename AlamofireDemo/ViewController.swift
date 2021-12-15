@@ -44,6 +44,20 @@ let vc = storyboard?.instantiateViewController(withIdentifier: "DetailViewContro
 
 
     }
+    
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        cell.layer.transform = CATransform3DMakeScale(0.1, 0.1, 1.0)
+        
+        UIView.animate(withDuration: 1.0, animations: {
+            cell.layer.transform = CATransform3DMakeScale(1.0, 1.0, 1.0)
+
+        }, completion: nil)
+        
+        
+        
+        
+        
+    }
 
     
     var employeeName_Array = [String]()
