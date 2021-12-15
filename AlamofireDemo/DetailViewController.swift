@@ -16,6 +16,8 @@ class DetailViewController: UIViewController {
     var getEmployeeName1:String = ""
     var getEmployeeName2:String = ""
     var getEmployeeName3:String = ""
+    var getEmployeeName4:String = ""
+
 
     
     @IBOutlet weak var empId: UILabel!
@@ -23,6 +25,7 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var emisalary_Lbl: UILabel!
     @IBOutlet weak var empAge_Lbl: UILabel!
     
+    @IBOutlet weak var pImg: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -30,6 +33,21 @@ class DetailViewController: UIViewController {
         self.empId.text = getEmployeeName1
         self.empAge_Lbl.text = getEmployeeName2
         self.emisalary_Lbl.text = getEmployeeName3
+        
+        self.pImg.image = UIImage(named: getEmployeeName4)
+        
+        
+        guard let receiveImage = try? Data(contentsOf: URL(string: getEmployeeName4)!)
+            else {
+                
+                return nil!
+        }
+        self.pImg?.image = UIImage(data: receiveImage)
+        
+        
+        
+        
+        //self.pImg.image = getEmployeeName4
         
         // Do any additional setup after loading the view.
     }
