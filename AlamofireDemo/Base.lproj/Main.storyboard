@@ -184,9 +184,12 @@
                             <constraint firstItem="7ia-9n-d3V" firstAttribute="leading" secondItem="cUl-sS-QdP" secondAttribute="leading" constant="108" id="DFH-Ex-nJe"/>
                             <constraint firstItem="t1z-zN-yUs" firstAttribute="top" secondItem="cUl-sS-QdP" secondAttribute="top" constant="52" id="F3f-e4-go4"/>
                             <constraint firstItem="cUl-sS-QdP" firstAttribute="trailing" secondItem="t1z-zN-yUs" secondAttribute="trailing" constant="16" id="FyJ-3G-WJ4"/>
+                            <constraint firstItem="cUl-sS-QdP" firstAttribute="trailing" secondItem="Xdh-TS-5Yi" secondAttribute="trailing" constant="16" id="KC1-nK-tBo"/>
                             <constraint firstItem="cUl-sS-QdP" firstAttribute="trailing" secondItem="v6M-He-IJX" secondAttribute="trailing" constant="16" id="Mrt-so-VfU"/>
                             <constraint firstItem="cUl-sS-QdP" firstAttribute="trailing" secondItem="JHb-Ms-5Oi" secondAttribute="trailing" constant="16" id="RL0-lL-TDz"/>
                             <constraint firstItem="LFU-oE-rSK" firstAttribute="leading" secondItem="cUl-sS-QdP" secondAttribute="leading" constant="16" id="ezp-Mu-4BS"/>
+                            <constraint firstItem="Xdh-TS-5Yi" firstAttribute="leading" secondItem="cUl-sS-QdP" secondAttribute="leading" constant="16" id="k7Q-wP-lbX"/>
+                            <constraint firstItem="Xdh-TS-5Yi" firstAttribute="top" secondItem="JHb-Ms-5Oi" secondAttribute="bottom" constant="65" id="kt6-Dd-liK"/>
                             <constraint firstItem="JHb-Ms-5Oi" firstAttribute="leading" secondItem="cUl-sS-QdP" secondAttribute="leading" constant="16" id="lp7-0s-cNv"/>
                             <constraint firstItem="7ia-9n-d3V" firstAttribute="top" secondItem="JHb-Ms-5Oi" secondAttribute="bottom" constant="58" id="rcb-mW-qWU"/>
                             <constraint firstItem="v6M-He-IJX" firstAttribute="leading" secondItem="cUl-sS-QdP" secondAttribute="leading" constant="16" id="tVU-up-tvb"/>
@@ -207,6 +210,40 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aue-md-v5n" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2872.8000000000002" y="-92.203898050974516"/>
+        </scene>
+        <!--Receive View Controller-->
+        <scene sceneID="UfZ-Z1-x8T">
+            <objects>
+                <viewController storyboardIdentifier="ReceiveViewController" id="puC-b3-DtN" customClass="ReceiveViewController" customModule="AlamofireDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Z6R-xP-aTe">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Data Receive" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1VP-Pq-1aG">
+                                <rect key="frame" x="16" y="40" width="343" height="57"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="57" id="P63-DX-fDh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="1VP-Pq-1aG" firstAttribute="top" secondItem="i6y-bB-HwH" secondAttribute="top" constant="20" id="MtE-QM-1pp"/>
+                            <constraint firstItem="i6y-bB-HwH" firstAttribute="trailing" secondItem="1VP-Pq-1aG" secondAttribute="trailing" constant="16" id="czX-y6-lFL"/>
+                            <constraint firstItem="1VP-Pq-1aG" firstAttribute="leading" secondItem="i6y-bB-HwH" secondAttribute="leading" constant="16" id="p2r-g6-zM8"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="i6y-bB-HwH"/>
+                    </view>
+                    <connections>
+                        <outlet property="dataReceive_Lbl" destination="1VP-Pq-1aG" id="7z1-Ny-5YR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qiS-wD-LQw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3557.5999999999999" y="-92.203898050974516"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="qcs-L0-8pi">

@@ -72,6 +72,8 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
     }
     
    
+    
+
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
 let vc = storyboard?.instantiateViewController(withIdentifier: "DetailViewController") as? DetailViewController
         vc?.getEmployeeName = employeeName_Array[indexPath.row]
@@ -83,8 +85,8 @@ let vc = storyboard?.instantiateViewController(withIdentifier: "DetailViewContro
         
         
         self.navigationController?.pushViewController(vc!, animated: true)
-        
-      
+
+
     }
     
     func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
